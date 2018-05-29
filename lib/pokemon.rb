@@ -19,7 +19,7 @@ attr_accessor :id, :name, :type, :hp, :db
   end
 
   def alter_hp(hp_number, db)
-    db.execute("UPDATE TABLE pokemon SET hp = ?", hp_number)
+    db.execute("UPDATE TABLE pokemon SET hp = ?;", hp_number)
   end
 
 end
